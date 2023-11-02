@@ -40,6 +40,9 @@ body {
   font-size: 15px;
   font-family: inherit;
 }
+.btn:hover {
+  border: 1px solid #000;
+}
 
 .btn:focus {
   outline: none;
