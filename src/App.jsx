@@ -1,12 +1,10 @@
 import Banner from "./Components/Banner";
-import Header from "./Components/Header";
+import Todo from "./Components/Todo";
 
 function App() {
   return (
     <div>
-      <div className="container">
-        <Header />
-      </div>
+      <Todo />
       <Banner />
     </div>
   );
