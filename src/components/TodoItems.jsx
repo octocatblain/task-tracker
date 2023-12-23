@@ -1,8 +1,16 @@
-import React from "react";
-import "./CSS/Todoitems.css";
+import "./CSS/TodoItems.css";
 
-const Todoitems = () => {
-  return <div>Todoitems</div>;
+const Todoitems = ({ no, display, text }) => {
+  return (
+    <div className="todoitems">
+      <div className="todoitems-container">
+        <p>🟢</p>
+        <p>🟠</p>
+        <div className="todoitems-text">{text} </div>
+      </div>
+      <p>❌</p>
+    </div>
+  );
 };
 
 export default Todoitems;

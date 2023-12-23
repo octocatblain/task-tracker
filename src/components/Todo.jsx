@@ -1,22 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./CSS/Todo.css";
-
-const [todos, setTodos] = useState([]);
-const inputRef = useRef(null);
-
-let count = 0;
-const add = () => {
-  setTodos([
-    ...todos,
-    { no: count++, text: inputRef.current.value, display: "" },
-  ]);
-  inputRef.current.value = "";
-};
-useEffect(() => {
-  console.log(todos);
-}, [todos]);
+import Todoitems from "./TodoItems";
 
 const Todo = () => {
+  const [todos, setTodos] = useState([]);
+  const inputRef = useRef(null);
+
+  let count = 0;
+  const add = () => {
+    setTodos([
+      ...todos,
+      { no: count++, text: inputRef.current.value, display: "" },
+    ]);
+    inputRef.current.value = "";
+  };
+
+  useEffect(() => {
+    console.log(todos);
+  }, [todos]);
+
   return (
     <div className="todo">
       <div className="todo-header">Task Tracker</div>
@@ -36,7 +38,18 @@ const Todo = () => {
           Add
         </div>
       </div>
-      <div className="todo-list"></div>
+      <div className="todo-list">
+        {todos.map((item, index) => {
+          return (
+            <Todoitems
+              key={item.index}
+              no={item.no}
+              display={item.display}
+              text={item.text}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };
