@@ -4,7 +4,7 @@ import "./CSS/Banner.css";
 const TodoBanner = () => {
   return (
     <div className="banner">
-      <h4>🔴Website in Development</h4>
+      <h5>🔴Website in Development</h5>
     </div>
   );
 };
