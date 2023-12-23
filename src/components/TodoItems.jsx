@@ -8,7 +8,7 @@ const Todoitems = ({ no, display, text }) => {
         <p>🟠</p>
         <div className="todoitems-text">{text} </div>
       </div>
-      <p>❌</p>
+      <p className="cross-icon">❌</p>
     </div>
   );
 };
