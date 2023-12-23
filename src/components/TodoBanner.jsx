@@ -1,6 +1,6 @@
 import "./CSS/Banner.css";
 
-const Banner = () => {
+const TodoBanner = () => {
   return (
     <div className="banner">
       <h4>🔴Website in Development</h4>
@@ -8,4 +8,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default TodoBanner;

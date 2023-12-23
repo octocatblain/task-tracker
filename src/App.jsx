@@ -1,11 +1,11 @@
-import Banner from "./Components/Banner";
+import TodoBanner from "./Components/TodoBanner";
 import Todo from "./Components/Todo";
 
 function App() {
   return (
     <div>
       <Todo />
-      <Banner />
+      <TodoBanner />
     </div>
   );
 }
