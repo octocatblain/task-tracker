@@ -1,5 +1,5 @@
-import TodoBanner from "./Components/TodoBanner";
 import Todo from "./Components/Todo";
+import TodoBanner from "./Components/TodoBanner";
 
 function App() {
   return (
