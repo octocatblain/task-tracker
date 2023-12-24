@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 8px 0;
+  padding-top: 1rem;
 }
 
 .todoitems-container {
@@ -21,7 +22,11 @@
 
 .cross-icon {
   cursor: pointer;
-  font-size: 0.8rem;
+}
+
+.todoitems img {
+  width: 20px;
+  height: 20px;
 }
 
 .line-through {

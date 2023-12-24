@@ -1,4 +1,7 @@
 import "./CSS/TodoItems.css";
+import cross from "./Assets/cross.png";
+import not_tick from "./Assets/not_tick.png";
+import tick from "./Assets/tick.png";
 
 const Todoitems = ({ no, display, text, setTodos }) => {
   const deleteTodo = (no) => {
@@ -31,17 +34,21 @@ const Todoitems = ({ no, display, text, setTodos }) => {
           toggle(no);
         }}
       >
-        {display === "" ? <p>🟢</p> : <p>🟠</p>}
+        {display === "" ? (
+          <img src={not_tick} alt="not tick" />
+        ) : (
+          <img src={tick} alt="tick" />
+        )}
         <div className="todoitems-text">{text} </div>
       </div>
-      <p
+      <img
         onClick={() => {
           deleteTodo(no);
         }}
         className="cross-icon"
-      >
-        ❌
-      </p>
+        src={cross}
+        alt="cross"
+      />
     </div>
   );
 };
