@@ -1,6 +1,12 @@
 import "./CSS/TodoItems.css";
 
 const Todoitems = ({ no, display, text, setTodos }) => {
+  const deleteTodo = (no) => {
+    let data = JSON.parse(localStorage.getItem("todos"));
+    data = data.filter((todo) => todo.no !== no);
+    setTodos(data);
+  };
+
   const toggle = (no) => {
     let data = JSON.parse(localStorage.getItem("todos"));
     for (let i = 0; i < data.length; i++) {
@@ -28,7 +34,14 @@ const Todoitems = ({ no, display, text, setTodos }) => {
         {display === "" ? <p>🟢</p> : <p>🟠</p>}
         <div className="todoitems-text">{text} </div>
       </div>
-      <p className="cross-icon">❌</p>
+      <p
+        onClick={() => {
+          deleteTodo(no);
+        }}
+        className="cross-icon"
+      >
+        ❌
+      </p>
     </div>
   );
 };
