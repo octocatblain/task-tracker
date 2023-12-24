@@ -23,3 +23,8 @@
   cursor: pointer;
   font-size: 0.8rem;
 }
+
+.line-through {
+  text-decoration: line-through solid #000000 2px;
+  font-style: italic;
+}

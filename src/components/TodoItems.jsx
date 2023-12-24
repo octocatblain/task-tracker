@@ -20,7 +20,7 @@ const Todoitems = ({ no, display, text, setTodos }) => {
   return (
     <div className="todoitems">
       <div
-        className="todoitems-container"
+        className={`todoitems-container ${display}`}
         onClick={() => {
           toggle(no);
         }}
