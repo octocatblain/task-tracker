@@ -35,9 +35,9 @@ const Todoitems = ({ no, display, text, setTodos }) => {
         }}
       >
         {display === "" ? (
-          <img src={not_tick} alt="not tick" />
+          <img src={not_tick} alt="Not Completed" />
         ) : (
-          <img src={tick} alt="tick" />
+          <img src={tick} alt="Completed" />
         )}
         <div className="todoitems-text">{text} </div>
       </div>
@@ -47,7 +47,7 @@ const Todoitems = ({ no, display, text, setTodos }) => {
         }}
         className="cross-icon"
         src={cross}
-        alt="cross"
+        alt="Delete"
       />
     </div>
   );
