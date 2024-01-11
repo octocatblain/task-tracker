@@ -1,11 +1,11 @@
+import Footer from "./Components/Footer";
 import Todo from "./Components/Todo";
-// import TodoBanner from "./Components/TodoBanner";
 
 function App() {
   return (
     <div>
       <Todo />
-      {/* <TodoBanner /> */}
+      <Footer />
     </div>
   );
 }
