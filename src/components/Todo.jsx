@@ -2,11 +2,11 @@ import React, { useEffect, useRef, useState } from "react";
 import "./CSS/Todo.css";
 import Todoitems from "./TodoItems";
 
+let count = 0;
 const Todo = () => {
   const [todos, setTodos] = useState([]);
   const inputRef = useRef(null);
 
-  let count = 0;
   const add = () => {
     setTodos([
       ...todos,
@@ -50,7 +50,7 @@ const Todo = () => {
         {todos.map((item, index) => {
           return (
             <Todoitems
-              key={item.index}
+              key={index}
               setTodos={setTodos}
               no={item.no}
               display={item.display}
