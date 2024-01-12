@@ -4,7 +4,10 @@ const Footer = () => {
   return (
     <footer>
       <div>
-        <p>&copy; 2023 &mdash; Blain Muema</p>
+        <p>
+          &copy; 2023 &mdash;{" "}
+          <a href="https://github.com/octocatblain">Blain Muema</a>
+        </p>
 
         <p>
           Made with <strong>React</strong> and <strong>CSS3</strong>. Font is

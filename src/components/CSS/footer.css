@@ -19,10 +19,12 @@ footer div a {
   text-decoration: none;
   color: white;
   font-weight: 700;
-  transition: all 1s ease;
+  transition: all 500ms ease;
 }
 
 footer div a:hover,
 footer div a:focus {
+  color: lime;
   text-decoration: underline;
+  transition: all 200ms ease;
 }
