@@ -18,9 +18,11 @@ const Info = () => {
             </div>
             <div className="description">
               <p>
-                Something very important i want to say about this app and its
+                Something very important I want to say about this app and its
                 technologies. Perhaps, my life story? :)
               </p>
+              &#x2024;
+              <p> Just Kidding, have fun!🌞</p>
               <button className="goto" onClick={() => toggle()}>
                 <p>Go To App</p>
               </button>
