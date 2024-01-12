@@ -1,0 +1,79 @@
+.info {
+  min-width: 100%;
+  min-height: 100vh;
+  background: #000;
+
+  position: absolute;
+  z-index: 999;
+
+  padding: 100px;
+  overflow: hidden;
+  transition: all 500ms ease-out;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.title {
+  font-size: 5rem;
+  background-clip: text;
+  background-image: url("../Assets/slider-5.jpg");
+  color: transparent;
+}
+
+.description {
+  font-size: 1.5rem;
+  text-align: center;
+  color: hsl(0, 0%, 50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  gap: 30px;
+}
+
+.goto {
+  border-radius: 50px;
+  cursor: pointer;
+  align-self: center;
+  background-color: chartreuse;
+
+  outline: none;
+  border: none;
+  transition: all 500ms ease;
+
+  animation: rainbow-animation 1000ms linear infinite;
+}
+
+.goto p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 10px;
+}
+
+@keyframes rainbow-animation {
+  0% {
+    background-color: orange;
+    filter: hue-rotate(0deg);
+  }
+  25% {
+    background-color: blue;
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    background-color: greenyellow;
+    filter: hue-rotate(0deg);
+  }
+  75% {
+    background-color: yellow;
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    background-color: red;
+    filter: hue-rotate(360deg);
+  }
+}

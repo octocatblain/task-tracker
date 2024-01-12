@@ -33,3 +33,31 @@
   text-decoration: line-through solid #000000 2px;
   font-style: italic;
 }
+
+.back-btn {
+  padding: 10px;
+  border: 2px solid green;
+  font-weight: 700;
+  border-radius: 5px;
+  outline: none;
+  position: absolute;
+  bottom: 100px;
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+
+.back-btn a {
+  text-decoration: none;
+  color: green;
+}
+
+.back-btn:hover {
+  background-color: green;
+
+  transform: translateY(-10px);
+  transition: all 200ms ease;
+}
+
+.back-btn:hover a {
+  color: white;
+}
